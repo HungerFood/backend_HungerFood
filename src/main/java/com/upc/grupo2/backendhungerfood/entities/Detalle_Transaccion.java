@@ -18,7 +18,7 @@ public class Detalle_Transaccion {
     private Long id;
 
     @Column(name = "Monto_transaccion", nullable = false)
-    private Double Monto_transaccion;
+    private Double monto_transaccion;
 
     // @ManytoOne
    // @JointoColumn(name = "Comprobante_transaccion_id", nullable = false)
