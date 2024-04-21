@@ -9,10 +9,14 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Metodo_de_pago {
+public class Metodo_De_Pago {
+    //ID
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "metodo_de_pago_id")
     private Long id;
-    @Column(nullable = false, length = 100)
+
+    //Tipo
+    @Column(name = "tipo",nullable = false, length = 100)
     private String tipo;
 }
