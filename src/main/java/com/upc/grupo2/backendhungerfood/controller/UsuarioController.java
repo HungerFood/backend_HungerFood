@@ -14,7 +14,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @RestController
-@RequestMapping("/HungerFood")
+@RequestMapping("/HungerFood/Usuario")
 public class UsuarioController {
     @Autowired
     private UsuarioService usuarioService;
