@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/HungerFood")
+@RequestMapping("/HungerFood/Usuario")
 public class UsuarioController {
     @Autowired
     private UsuarioService usuarioService;
@@ -83,5 +83,4 @@ public class UsuarioController {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Error al eliminar usuario");
         }
     }
-    //aea
 }
