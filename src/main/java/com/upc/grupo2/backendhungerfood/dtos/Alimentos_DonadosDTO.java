@@ -15,6 +15,6 @@ public class Alimentos_DonadosDTO {
     private String descripcion_especifico;
     private LocalDate fecha_emision;
     private LocalDate fecha_vencimiento;
-    //private Long tipo_alimento_id;
+    //private Tipo_Alimento tipo_alimento_id;
 
 }
