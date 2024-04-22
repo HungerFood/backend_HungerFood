@@ -14,27 +14,26 @@ public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "usuario_id")
-    private Long id;
+    private Long id; //id del usuario
 
     //Nombre
     @Column(name = "Nombre",length = 60, nullable = false)
-    private String Nombre;
+    private String nombre; //nombre del usuario
 
     //Apellido
     @Column(name = "Apellido",length = 60, nullable = false)
-    private String Apellido;
+    private String apellido; //apellido del usuario
 
     //Correo y sea único
     @Column(name = "Correo", length = 60,nullable = false, unique = true)
-    private String Correo;
+    private String correo; //correo del usuario
 
     //Contraseña
     @Column(length = 60,nullable = false)
-    private String Contrasenia;
+    private String contrasenia; //contraseña del usuario
 
     //id roles
 
     //id tipo donacion
 
-    //hola soy diego
 }

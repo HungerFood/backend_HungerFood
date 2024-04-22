@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/HungerFood")
+@RequestMapping("/HungerFood/Usuario")
 public class UsuarioController {
     @Autowired
     private UsuarioService usuarioService;
