@@ -26,7 +26,7 @@ public class Comprobante_Transaccion {
     private Usuario usuario;
 
     //Metodo_De_Pago
-    //@ManyToOne
-    //@JoinColumn(name = "Metodo_de_pago_id")
-    //private Metodo_de_pago metodo_de_pago;
+    @ManyToOne
+    @JoinColumn(name = "Metodo_de_pago_id")
+    private Metodo_De_Pago metodo_de_pago;
 }

@@ -1,5 +1,6 @@
 package com.upc.grupo2.backendhungerfood.dtos;
 
+import com.upc.grupo2.backendhungerfood.entities.Metodo_De_Pago;
 import com.upc.grupo2.backendhungerfood.entities.Usuario;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,5 +13,5 @@ public class Comprobante_TransaccionDTO {
     private Long id;
     private Double montoTotal;
     private Usuario usuario;
-    //private Metodo_de_pago metodo_de_pago;
+    private Metodo_De_Pago metodo_de_pago;
 }

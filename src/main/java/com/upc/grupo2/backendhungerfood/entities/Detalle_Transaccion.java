@@ -20,9 +20,9 @@ public class Detalle_Transaccion {
     @Column(name = "Monto_transaccion", nullable = false)
     private Double monto_transaccion;
 
-    // @ManytoOne
-   // @JointoColumn(name = "Comprobante_transaccion_id", nullable = false)
-    // private Comprobante_transaccion Comprobante_transaccion_id;
+    @ManyToOne
+    @JoinColumn(name = "Comprobante_transaccion_id", nullable = false)
+    private Comprobante_Transaccion comprobante_transaccion;
 
 
 
