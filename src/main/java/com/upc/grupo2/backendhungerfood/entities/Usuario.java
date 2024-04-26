@@ -40,8 +40,5 @@ public class Usuario {
     @JoinColumn(name = "tipo_donacion_id")
     private Tipo_Donacion tipo_donacion;
 
-    //id Comprobante transaccion
-    @ManyToOne
-    @JoinColumn(name = "comprobante_transaccion_id")
-    private Comprobante_Transaccion comprobante_transaccion;
+
 }

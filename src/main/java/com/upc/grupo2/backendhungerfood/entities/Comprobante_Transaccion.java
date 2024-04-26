@@ -13,7 +13,7 @@ public class Comprobante_Transaccion {
     //ID
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "comprobanteTransaccion_id")
+    @Column(name = "comprobante_transaccion_id")
     private Long id;
 
     //Monto total de transaccion en comprobante

@@ -16,5 +16,5 @@ public class UsuarioDTO {
     private String correo;
     private String contrasenia;
     private Tipo_Donacion tipo_donacion;
-    private Comprobante_Transaccion comprobante_transaccion;
+
 }
