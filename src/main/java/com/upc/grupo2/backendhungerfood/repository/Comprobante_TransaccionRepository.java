@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface Comprobante_TransaccionRepository extends JpaRepository<Comprobante_Transaccion, Long> {
-    @Query("SELECT new com.upc.grupo2.backendhungerfood.dtos.SumTransaccionDTO(SUM(c.montoTotal), c.usuario.Nombre) FROM Comprobante_Transaccion c WHERE c.usuario.id = :usuarioId GROUP BY c.usuario.Nombre")
+    @Query("SELECT new com.upc.grupo2.backendhungerfood.dtos.SumTransaccionDTO(SUM(c.montoTotal), c.usuario.nombre) FROM Comprobante_Transaccion c WHERE c.usuario.id = :usuarioId GROUP BY c.usuario.nombre")
     SumTransaccionDTO findMontoTransaccionByUsuarioId(Long usuarioId);
 }
