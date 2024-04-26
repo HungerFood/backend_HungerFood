@@ -1,8 +1,11 @@
 package com.upc.grupo2.backendhungerfood.dtos;
 
+import com.upc.grupo2.backendhungerfood.entities.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -13,5 +16,5 @@ public class UsuarioDTO {
     private String apellido;
     private String correo;
     private String contrasenia;
-
+    private List<Role> roles;
 }
