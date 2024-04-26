@@ -11,6 +11,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Detalle_TransaccionDTO {
     private Long id;
-    private Double Monto_transaccion;
+    private Double monto_transaccion;
     private Comprobante_Transaccion comprobante_transaccion;
 }

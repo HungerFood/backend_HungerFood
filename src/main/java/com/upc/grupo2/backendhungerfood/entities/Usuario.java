@@ -17,24 +17,31 @@ public class Usuario {
     private Long id; //id del usuario
 
     //Nombre
-    @Column(name = "Nombre",length = 60, nullable = false)
+    @Column(name = "Nombre", nullable = false)
     private String nombre; //nombre del usuario
 
     //Apellido
-    @Column(name = "Apellido",length = 60, nullable = false)
+    @Column(name = "Apellido", nullable = false)
     private String apellido; //apellido del usuario
 
     //Correo y sea único
-    @Column(name = "Correo", length = 60,nullable = false, unique = true)
+    @Column(name = "Correo",nullable = false, unique = true)
     private String correo; //correo del usuario
 
     //Contraseña
-    @Column(length = 60,nullable = false)
+    @Column(nullable = false)
     private String contrasenia; //contraseña del usuario
 
     //id roles
 
     
     //id tipo donacion
+    @ManyToOne
+    @JoinColumn(name = "tipo_donacion_id")
+    private Tipo_Donacion tipo_donacion;
 
+    //id Comprobante transaccion
+    @ManyToOne
+    @JoinColumn(name = "comprobante_transaccion_id")
+    private Comprobante_Transaccion comprobante_transaccion;
 }

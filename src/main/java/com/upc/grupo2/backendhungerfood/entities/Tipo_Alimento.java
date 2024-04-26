@@ -15,9 +15,9 @@ public class Tipo_Alimento {
     //no quiero que aumente al momento de registrar incorrectamente, o sea no quiero que el nombre_alimento se repita, si es diferente, que se registre
 
     private Long id;
-    @Column(name = "nombre_alimento",length = 100, nullable = false, unique = true)
+    @Column(name = "nombre_alimento", nullable = false, unique = true)
     private String nombre_tipo_alimento;
-    @Column(name = "descripcion_general",length = 100, nullable = false)
+    @Column(name = "descripcion_general", nullable = false)
     private String descripcion_general;
 
 }

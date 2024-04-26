@@ -15,6 +15,6 @@ public class Tipo_Donacion {
     @Column(name = "tipo_donacion_id")
     private Long id;
 
-    @Column(name = "nombre_tipo_donacion",nullable = false, length = 100)
+    @Column(name = "nombre_tipo_donacion",nullable = false)
     private String nombre_tipo_donacion;
 }

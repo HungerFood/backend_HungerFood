@@ -15,7 +15,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @RestController
-@RequestMapping("/HungerFood")
+@RequestMapping("/HungerFood/ComprobanteTransaccion")
 public class Comprobante_TransaccionController {
     @Autowired
     private Comprobante_TransaccionService comprobante_transaccionService;

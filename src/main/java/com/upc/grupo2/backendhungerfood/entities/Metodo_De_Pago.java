@@ -17,6 +17,6 @@ public class Metodo_De_Pago {
     private Long id;
 
     //Tipo
-    @Column(name = "tipo",nullable = false, length = 100)
+    @Column(name = "tipo",nullable = false)
     private String tipo;
 }

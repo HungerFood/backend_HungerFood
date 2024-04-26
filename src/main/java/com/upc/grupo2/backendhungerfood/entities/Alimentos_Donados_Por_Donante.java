@@ -32,8 +32,8 @@ public class Alimentos_Donados_Por_Donante {
     private Usuario usuario;
 
     //Alimentos_Donados
-    //@ManyToOne
-    //@JoinColumn(name = "Alimentos_Donados_id")
-    //private Alimentos_Donados alimentos_Donados;
+    @ManyToOne
+    @JoinColumn(name = "alimentos_donados_id")
+    private Alimentos_Donados alimentos_donados;
 
 }

@@ -15,7 +15,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @RestController
-@RequestMapping("/HungerFood")
+@RequestMapping("/HungerFood/AlimentosDonadosPorDonante")
 public class Alimentos_Donados_Por_DonanteController {
     @Autowired
     private Alimentos_Donados_Por_DonanteService alimentos_Donados_Por_DonanteService;

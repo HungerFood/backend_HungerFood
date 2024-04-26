@@ -1,5 +1,6 @@
 package com.upc.grupo2.backendhungerfood.dtos;
 
+import com.upc.grupo2.backendhungerfood.entities.Tipo_Alimento;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,6 +16,6 @@ public class Alimentos_DonadosDTO {
     private String descripcion_especifico;
     private LocalDate fecha_emision;
     private LocalDate fecha_vencimiento;
-    //private Tipo_Alimento tipo_alimento_id;
+    private Tipo_Alimento tipo_alimento;
 
 }
